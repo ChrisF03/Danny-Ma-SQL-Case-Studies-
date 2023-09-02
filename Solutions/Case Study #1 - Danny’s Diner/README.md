@@ -1,5 +1,8 @@
 <a href="https://8weeksqlchallenge.com/case-study-1/"> <img align="right" width="300" height="300" src="https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%231%20-%20Danny%E2%80%99s%20Diner/1.png"></a>
 
+<details>
+<summary>CASE STUDY</summary>
+
 ## Introduction
 Danny seriously loves Japanese food so in the beginning of 2021, he decides to embark upon a risky venture and opens up a cute little restaurant that sells his 3 favourite foods: sushi, curry and ramen.
 
@@ -17,9 +20,9 @@ Danny has shared with you 3 key datasets for this case study:
 - sales
 - menu
 - members
-
-## Case Study 
-
+    
+## Case Study<br>
+    
 **Schema (PostgreSQL v13)**
 ```sql
     CREATE SCHEMA dannys_diner;
@@ -324,3 +327,11 @@ In the first week after a customer joins the program (including their join date)
 | ----------- | ------ |
 | A           | 1370   |
 | B           | 820    |
+</details>
+
+<details>
+<summary>BONUS QUESTIONS</summary>
+    
+## JOIN ALL THE THINGS
+
+</details>
