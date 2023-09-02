@@ -7,7 +7,7 @@ These SQL case studies are free case studies designed by [Danny Ma](https://8wee
 <br>
 <br>
 # Table Of Contents
-* [Case Study #1 : Danny's Diner](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solution/Case%20Study%20%231%20-%20Danny's%20Diner.md) 
+* [Case Study #1 : Danny's Diner](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/tree/main/Solutions/Case%20Study%20%231%20-%20Danny%E2%80%99s%20Diner) 
 * Case Study #2 : Pizza Runner
 * Case Study #3 : Foodie-Fi
 * Case Study #4 : Data Bank
