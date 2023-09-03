@@ -6,8 +6,6 @@ These SQL case studies are free case studies designed by [Danny Ma](https://www.
 The case studies will be completed in <ins>PostgreSQL v13</ins> and my solutions to each case study will be found below as I complete them.
 <br>
 <br>
-<br>
-<br>
 # Table Of Contents
 * [Case Study #1 : Danny's Diner](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/tree/main/Solutions/Case%20Study%20%231%20-%20Danny%E2%80%99s%20Diner) (12 queries)
 * Case Study #2 : Pizza Runner
