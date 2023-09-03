@@ -1,7 +1,9 @@
 <a href="https://8weeksqlchallenge.com/"> <img align="left" width="250" height="250" src="https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/data-with-danny-logo-removebg-preview.png"></a>
 <br>
 # Danny Ma's 8-week SQL Challenge 
-These SQL case studies are free case studies designed by [Danny Ma](https://www.linkedin.com/in/datawithdanny/) to help data analysts practice and hone their SQL skills by simulating real-world business problems and challenging participants to query for solutions. Below you will find my solutions to all 8 case studies as I complete them.
+These SQL case studies are free case studies designed by [Danny Ma](https://www.linkedin.com/in/datawithdanny/) to help data analysts practice and hone their SQL skills by simulating real-world business problems and challenging participants to query for solutions. 
+
+The case studies will be completed in <ins>PostgreSQL v13</ins> and my solutions to each case study will be found below as I complete them.
 <br>
 <br>
 <br>
