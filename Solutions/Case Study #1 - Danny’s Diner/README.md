@@ -12,11 +12,14 @@ He plans on using these insights to help him decide whether he should expand the
 
 Danny has provided you with a sample of his overall customer data due to privacy issues - but he hopes that these examples are enough for you to write fully functioning SQL queries to help him answer his questions!
 
-Danny has shared with you 3 key datasets for this case study:
+<!-- Danny has shared with you 3 key datasets for this case study:
 
 - sales
 - menu
-- members
+- members -->
+
+## Entity Relationship Diagram
+![Danny's Diner (1)](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/assets/103148784/6dc125a6-f3ea-4429-998f-1e4bd93ada5e)
 ---
 <details>
 <summary>
