@@ -20,7 +20,7 @@ This case study has LOTS of questions - they are broken up by area of focus incl
 
 ## Entity Relationship Diagram
 ![Pizza Runner(entity relationship)](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/assets/103148784/8df3ccec-7e96-4e61-92cf-28882d1ef0e6)
-
+---
 <details>
 <summary>
 Data Cleaning
