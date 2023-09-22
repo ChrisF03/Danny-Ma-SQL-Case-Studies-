@@ -11,7 +11,6 @@ Danny wants to use the data to answer a few simple questions about his customers
 He plans on using these insights to help him decide whether he should expand the existing customer loyalty program - additionally he needs help to generate some basic datasets so his team can easily inspect the data without needing to use SQL.
 
 Danny has provided you with a sample of his overall customer data due to privacy issues - but he hopes that these examples are enough for you to write fully functioning SQL queries to help him answer his questions!
-
 <!-- Danny has shared with you 3 key datasets for this case study:
 
 - sales
@@ -26,8 +25,10 @@ Danny has provided you with a sample of his overall customer data due to privacy
 CASE STUDY
 </summary>
     
-## Case Study<br>
+## Case Study
+This case study focused heavily on the following functions :<br> - Common Table Expressions<br> - Grouping By Aggregates<br> - Window Functions for ranking and<br> - Table Joins
 
+---
 **Query #1**<br>
 What is the total amount each customer spent at the restaurant?
 ```sql
