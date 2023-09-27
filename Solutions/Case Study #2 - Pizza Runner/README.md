@@ -25,5 +25,82 @@ This case study has LOTS of questions - they are broken up by area of focus incl
 <summary>
 Data Cleaning
 </summary>
+  
+## Data Cleaning
+### <ins> Customer_Orders </ins>
+- The customer_orders table has inconsistent data types.  We must first clean the data before answering any questions. 
+- The exclusions and extras columns contain values that are either 'null' (text), null (data type) or '' (empty).
+- We will create a temporary table where all forms of null will be transformed to NULL (data type).
+
+**Query #1**
+  
+```sql
+    SELECT *
+    FROM pizza_runner.customer_orders;
+```
+| order_id | customer_id | pizza_id | exclusions | extras | order_time               |
+| -------- | ----------- | -------- | ---------- | ------ | ------------------------ |
+| 1        | 101         | 1        |            |        | 2020-01-01T18:05:02.000Z |
+| 2        | 101         | 1        |            |        | 2020-01-01T19:00:52.000Z |
+| 3        | 102         | 1        |            |        | 2020-01-02T23:51:23.000Z |
+| 3        | 102         | 2        |            |        | 2020-01-02T23:51:23.000Z |
+| 4        | 103         | 1        | 4          |        | 2020-01-04T13:23:46.000Z |
+| 4        | 103         | 1        | 4          |        | 2020-01-04T13:23:46.000Z |
+| 4        | 103         | 2        | 4          |        | 2020-01-04T13:23:46.000Z |
+| 5        | 104         | 1        | null       | 1      | 2020-01-08T21:00:29.000Z |
+| 6        | 101         | 2        | null       | null   | 2020-01-08T21:03:13.000Z |
+| 7        | 105         | 2        | null       | 1      | 2020-01-08T21:20:29.000Z |
+| 8        | 102         | 1        | null       | null   | 2020-01-09T23:54:33.000Z |
+| 9        | 103         | 1        | 4          | 1, 5   | 2020-01-10T11:22:59.000Z |
+| 10       | 104         | 1        | null       | null   | 2020-01-11T18:34:49.000Z |
+| 10       | 104         | 1        | 2, 6       | 1, 4   | 2020-01-11T18:34:49.000Z |
+
+---
+**Query #2**
+```sql
+    DROP TABLE IF EXISTS new_customer_orders;
+```
+```sql
+    CREATE TEMP TABLE new_customer_orders AS (
+    	SELECT
+    		order_id,
+    		customer_id,
+    		pizza_id,
+    	CASE
+    		WHEN exclusions = ''
+    			OR exclusions LIKE 'null' THEN Null
+    		ELSE exclusions
+    	END AS exclusions,
+    	CASE
+    		WHEN extras = ''
+    			OR extras LIKE 'null' THEN Null
+    		ELSE extras
+    	END AS extras,
+    		order_time
+    FROM
+    	pizza_runner.customer_orders
+    );
+```
+```sql
+    SELECT * FROM new_customer_orders;
+```
+| order_id | customer_id | pizza_id | exclusions | extras | order_time               |
+| -------- | ----------- | -------- | ---------- | ------ | ------------------------ |
+| 1        | 101         | 1        | NULL       | NULL   | 2020-01-01T18:05:02.000Z |
+| 2        | 101         | 1        | NULL       | NULL   | 2020-01-01T19:00:52.000Z |
+| 3        | 102         | 1        | NULL       | NULL   | 2020-01-02T23:51:23.000Z |
+| 3        | 102         | 2        | NULL       | NULL   | 2020-01-02T23:51:23.000Z |
+| 4        | 103         | 1        | 4          | NULL   | 2020-01-04T13:23:46.000Z |
+| 4        | 103         | 1        | 4          | NULL   | 2020-01-04T13:23:46.000Z |
+| 4        | 103         | 2        | 4          | NULL   | 2020-01-04T13:23:46.000Z |
+| 5        | 104         | 1        | NULL       | 1      | 2020-01-08T21:00:29.000Z |
+| 6        | 101         | 2        | NULL       | NULL   | 2020-01-08T21:03:13.000Z |
+| 7        | 105         | 2        | NULL       | 1      | 2020-01-08T21:20:29.000Z |
+| 8        | 102         | 1        | NULL       | NULL   | 2020-01-09T23:54:33.000Z |
+| 9        | 103         | 1        | 4          | 1, 5   | 2020-01-10T11:22:59.000Z |
+| 10       | 104         | 1        | NULL       | NULL   | 2020-01-11T18:34:49.000Z |
+| 10       | 104         | 1        | 2, 6       | 1, 4   | 2020-01-11T18:34:49.000Z |
+
+---
 </details>
 
