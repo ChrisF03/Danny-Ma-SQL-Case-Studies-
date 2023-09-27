@@ -29,7 +29,7 @@ Data Cleaning
 ## Data Cleaning
 ### <ins> Customer_Orders </ins>
 - The customer_orders table has inconsistent data types.  We must first clean the data before answering any questions. 
-- The exclusions and extras columns contain values that are either 'null' (text), null (data type) or '' (empty).
+- The exclusions and extras columns contain values that are either 'null' (text), NULL (data type) or '' (empty).
 - We will create a temporary table where all forms of null will be transformed to NULL (data type).
 
 **Query #1**
@@ -102,5 +102,32 @@ Data Cleaning
 | 10       | 104         | 1        | 2, 6       | 1, 4   | 2020-01-11T18:34:49.000Z |
 
 ---
+### <ins> Runner_Orders </ins>
+- The runner_order table has inconsistent data types.  We must first clean the data before answering any questions. 
+- The distance and duration columns have text and numbers.  We will remove the text values and convert to numeric values.
+- We will convert all 'null' (text) and 'NaN' values in the cancellation column to NULL (data type).
+- We will convert the pickup_time (varchar) column to a timestamp data type.
+
+**Query #1**
+  
+```sql
+    SELECT * 
+    FROM pizza_runner.runner_orders;
+```
+| order_id | runner_id | pickup_time         | distance | duration   | cancellation            |
+| -------- | --------- | ------------------- | -------- | ---------- | ----------------------- |
+| 1        | 1         | 2020-01-01 18:15:34 | 20km     | 32 minutes |                         |
+| 2        | 1         | 2020-01-01 19:10:54 | 20km     | 27 minutes |                         |
+| 3        | 1         | 2020-01-03 00:12:37 | 13.4km   | 20 mins    |                         |
+| 4        | 2         | 2020-01-04 13:53:03 | 23.4     | 40         |                         |
+| 5        | 3         | 2020-01-08 21:10:57 | 10       | 15         |                         |
+| 6        | 3         | null                | null     | null       | Restaurant Cancellation |
+| 7        | 2         | 2020-01-08 21:30:45 | 25km     | 25mins     | null                    |
+| 8        | 2         | 2020-01-10 00:15:02 | 23.4 km  | 15 minute  | null                    |
+| 9        | 2         | null                | null     | null       | Customer Cancellation   |
+| 10       | 1         | 2020-01-11 18:50:20 | 10km     | 10minutes  | null                    |
+
+---
+
 </details>
 
