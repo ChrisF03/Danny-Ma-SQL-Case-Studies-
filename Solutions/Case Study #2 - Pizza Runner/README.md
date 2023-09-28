@@ -170,4 +170,9 @@ Data Cleaning
 | 10       | 1         | 2020-01-11T18:50:20.000Z | 10       | 10       | NULL                    |
 
 </details>
-
+---
+<details>
+<summary>
+A. Pizza Metrics
+</summary>
+</details>
