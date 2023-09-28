@@ -170,9 +170,43 @@ Data Cleaning
 | 10       | 1         | 2020-01-11T18:50:20.000Z | 10       | 10       | NULL                    |
 
 </details>
+
 ---
+
 <details>
 <summary>
 A. Pizza Metrics
+</summary>
+</details>
+
+---
+
+<details>
+<summary>
+B. Runner and Customer Experience
+</summary>
+</details>
+
+---
+
+<details>
+<summary>
+C. Ingredient Optimisation
+</summary>
+</details>
+
+--- 
+
+<details>
+<summary>
+D. Pricing and Ratings
+</summary>
+</details>
+
+---
+
+<details>
+<summary>
+E. Bonus Questions
 </summary>
 </details>
