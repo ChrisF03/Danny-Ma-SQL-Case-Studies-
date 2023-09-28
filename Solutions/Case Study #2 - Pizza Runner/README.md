@@ -100,7 +100,7 @@ Data Cleaning
 | 9        | 103         | 1        | 4          | 1, 5   | 2020-01-10T11:22:59.000Z |
 | 10       | 104         | 1        | NULL       | NULL   | 2020-01-11T18:34:49.000Z |
 | 10       | 104         | 1        | 2, 6       | 1, 4   | 2020-01-11T18:34:49.000Z |
-
+---
 ---
 ### <ins> Runner_Orders </ins>
 - The runner_order table has inconsistent data types.  We must first clean the data before answering any questions. 
