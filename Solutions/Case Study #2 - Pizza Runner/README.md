@@ -128,6 +128,46 @@ Data Cleaning
 | 10       | 1         | 2020-01-11 18:50:20 | 10km     | 10minutes  | null                    |
 
 ---
+**Query #2**
+```sql
+    DROP TABLE IF EXISTS new_runner_orders;
+```
+```sql
+    CREATE TEMP TABLE new_runner_orders AS (
+    SELECT
+    		order_id,
+    		runner_id,
+    		CASE
+    			WHEN pickup_time LIKE 'null' THEN NULL
+    		ELSE pickup_time
+    	END::timestamp AS pickup_time,
+        NULLIF(regexp_replace(distance, '[^0-9.]', '', 'g'), '')::NUMERIC AS distance,
+        NULLIF(regexp_replace(duration, '[^0-9.]', '', 'g'), '')::NUMERIC AS duration,
+    		CASE
+    			WHEN cancellation LIKE 'null'
+    				OR cancellation LIKE 'NaN' 
+    				OR cancellation LIKE '' THEN NULL
+    		ELSE cancellation
+    	END AS cancellation
+    FROM
+    	pizza_runner.runner_orders
+    );
+```
+```sql
+    SELECT * FROM new_runner_orders;
+```
+| order_id | runner_id | pickup_time              | distance | duration | cancellation            |
+| -------- | --------- | ------------------------ | -------- | -------- | ----------------------- |
+| 1        | 1         | 2020-01-01T18:15:34.000Z | 20       | 32       | NULL                    |
+| 2        | 1         | 2020-01-01T19:10:54.000Z | 20       | 27       | NULL                    |
+| 3        | 1         | 2020-01-03T00:12:37.000Z | 13.4     | 20       | NULL                    |
+| 4        | 2         | 2020-01-04T13:53:03.000Z | 23.4     | 40       | NULL                    |
+| 5        | 3         | 2020-01-08T21:10:57.000Z | 10       | 15       | NULL                    |
+| 6        | 3         | NULL                     | NULL     | NULL     | Restaurant Cancellation |
+| 7        | 2         | 2020-01-08T21:30:45.000Z | 25       | 25       | NULL                    |
+| 8        | 2         | 2020-01-10T00:15:02.000Z | 23.4     | 15       | NULL                    |
+| 9        | 2         | NULL                     | NULL     | NULL     | Customer Cancellation   |
+| 10       | 1         | 2020-01-11T18:50:20.000Z | 10       | 10       | NULL                    |
 
 </details>
 
