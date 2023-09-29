@@ -179,10 +179,10 @@ A. Pizza Metrics
 </summary>
 
 ## A. Pizza Metrics
-```sql
-**Query #1**
-How many pizzas were ordered?
 
+**Query #1** <br>
+How many pizzas were ordered?
+```sql
     SELECT COUNT(pizza_id)
     FROM new_customer_orders;
 ```
@@ -191,7 +191,7 @@ How many pizzas were ordered?
 | 14    |
 
 ---
-**Query #2**
+**Query #2** <br>
 How many unique customer orders were made?
 ```sql
     SELECT COUNT(DISTINCT order_id)
@@ -202,7 +202,7 @@ How many unique customer orders were made?
 | 10    |
 
 ---
-**Query #3**
+**Query #3** <br>
 How many successful orders were delivered by each runner?
 ```sql
     SELECT runner_id, 
@@ -219,7 +219,7 @@ How many successful orders were delivered by each runner?
 | 3         | 1                 |
 
 ---
-**Query #4**
+**Query #4** <br>
 How many of each type of pizza was delivered?
 ```sql
     SELECT pizza_names.pizza_name,
@@ -239,7 +239,7 @@ How many of each type of pizza was delivered?
 | Vegetarian | 3     |
 
 ---
-**Query #5**
+**Query #5** <br>
 How many Vegetarian and Meatlovers were ordered by each customer?
 ```sql
     SELECT customer_id,
@@ -258,7 +258,7 @@ How many Vegetarian and Meatlovers were ordered by each customer?
 | 105         | 0           | 1          |
 
 ---
-**Query #6**
+**Query #6** <br>
 What was the maximum number of pizzas delivered in a single order?
 ```sql
     WITH max_pizzas AS (
@@ -279,7 +279,7 @@ What was the maximum number of pizzas delivered in a single order?
 | 3                 |
 
 ---
-**Query #7**
+**Query #7** <br>
 For each customer, how many delivered pizzas had at least 1 change and how many had no changes?
 ```sql
     SELECT customer_id,
@@ -302,7 +302,7 @@ For each customer, how many delivered pizzas had at least 1 change and how many 
 | 105         | 1           | 0          |
 
 ---
-**Query #8**
+**Query #8** <br>
 How many pizzas were delivered that had both exclusions and extras?
 ```sql
     SELECT SUM(CASE WHEN exclusions IS NOT NULL 
@@ -317,7 +317,7 @@ How many pizzas were delivered that had both exclusions and extras?
 | 1     |
 
 ---
-**Query #9**
+**Query #9** <br>
 What was the total volume of pizzas ordered for each hour of the day?
 ```sql
     SELECT EXTRACT(HOUR FROM order_time) AS hour_of_day,
@@ -336,7 +336,7 @@ What was the total volume of pizzas ordered for each hour of the day?
 | 23          | 3            |
 
 ---
-**Query #10**
+**Query #10** <br>
 What was the volume of orders for each day of the week?
 ```sql
     SELECT to_char(order_time,'Day') as week_day,
