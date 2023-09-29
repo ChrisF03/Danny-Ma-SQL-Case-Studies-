@@ -511,6 +511,8 @@ What was the average speed for each runner for each delivery and do you notice a
 | 101         | 1        | 1         | 20       | 32       | 37.50                  |
 | 103         | 4        | 2         | 23.4     | 40       | 35.10                  |
 
+- runner #2 is very fast. Maybe a little TOO fast ...
+- customer 102 appears to be a big tipper.
 ---
 **Query #7** <br>
 What is the successful delivery percentage for each runner?
