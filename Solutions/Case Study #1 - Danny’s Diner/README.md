@@ -16,6 +16,7 @@ Danny has provided you with a sample of his overall customer data due to privacy
 - sales
 - menu
 - members -->
+This case study focused heavily on the following functions :<br> - Common Table Expressions<br> - Grouping By Aggregates<br> - Window Functions for ranking and<br> - Table Joins
 
 ## Entity Relationship Diagram
 ![Danny's Diner (1)](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/assets/103148784/6dc125a6-f3ea-4429-998f-1e4bd93ada5e)
@@ -26,9 +27,7 @@ CASE STUDY
 </summary>
     
 ## Case Study
-This case study focused heavily on the following functions :<br> - Common Table Expressions<br> - Grouping By Aggregates<br> - Window Functions for ranking and<br> - Table Joins
 
----
 **Query #1**<br>
 What is the total amount each customer spent at the restaurant?
 ```sql
