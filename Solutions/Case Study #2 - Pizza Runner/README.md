@@ -370,7 +370,7 @@ B. Runner and Customer Experience
 
 ## B. Runner and Customer Experience 
 
-**Query #1**
+**Query #1** <br>
 How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01)
 ```sql
     With signups AS (
@@ -392,7 +392,7 @@ How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01)
 | 2021-01-15T00:00:00.000Z | 1             |
 
 ---
-**Query #2**
+**Query #2** <br>
 What was the average time in minutes it took for each runner to arrive at the Pizza Runner HQ to pickup the order?
 ```sql
     With arrival AS (
@@ -416,7 +416,7 @@ What was the average time in minutes it took for each runner to arrive at the Pi
 | 3         | 10               |
 
 ---
-**Query #3**
+**Query #3** <br>
 Is there any relationship between the number of pizzas and how long the order takes to prepare?
 ```sql
     With num_of_pizzas AS (
@@ -446,12 +446,12 @@ Is there any relationship between the number of pizzas and how long the order ta
 ```
 | n_pizzas | avg_order_time  |
 | -------- | --------------- |
-| 1        | [object Object] |
-| 2        | [object Object] |
-| 3        | [object Object] |
+| 1        | 00:12:21.4 |
+| 2        | 00:18:22.5 |
+| 3        | 00:29:17   |
 
 ---
-**Query #4**
+**Query #4** <br>
 What was the average distance travelled for each customer?
 ```sql
     SELECT c.customer_id,
@@ -471,7 +471,7 @@ What was the average distance travelled for each customer?
 | 105         | 25.00        |
 
 ---
-**Query #5**
+**Query #5** <br>
 What was the difference between the longest and shortest delivery times for all orders?
 ```sql
     SELECT MIN(duration) AS shortest_delivery,
@@ -484,7 +484,7 @@ What was the difference between the longest and shortest delivery times for all 
 | 10                | 40               | 30         |
 
 ---
-**Query #6**
+**Query #6** <br>
 What was the average speed for each runner for each delivery and do you notice any trend for these values?
 ```sql
     SELECT c.customer_id,
@@ -512,7 +512,7 @@ What was the average speed for each runner for each delivery and do you notice a
 | 103         | 4        | 2         | 23.4     | 40       | 35.10                  |
 
 ---
-**Query #7**
+**Query #7** <br>
 What is the successful delivery percentage for each runner?
 ```sql
     SELECT runner_id,
