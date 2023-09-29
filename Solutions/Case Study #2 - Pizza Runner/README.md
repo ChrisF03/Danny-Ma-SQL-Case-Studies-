@@ -371,16 +371,16 @@ B. Runner and Customer Experience
 ## B. Runner and Customer Experience 
 
 **Query #1**
-
+How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01)
 ```sql
     With signups AS (
     SELECT runner_id,
-    	   registration_date,
-    	   registration_date - ((registration_date - '2021-01-01') % 7) AS starting_week
+    	     registration_date,
+    	     registration_date - ((registration_date - '2021-01-01') % 7) AS starting_week
     FROM pizza_runner.runners
     )
     SELECT starting_week,
-    	   COUNT(runner_id) AS Total_Runners
+    	     COUNT(runner_id) AS Total_Runners
     FROM signups
     GROUP BY starting_week
     ORDER BY starting_week;
@@ -393,7 +393,7 @@ B. Runner and Customer Experience
 
 ---
 **Query #2**
-
+What was the average time in minutes it took for each runner to arrive at the Pizza Runner HQ to pickup the order?
 ```sql
     With arrival AS (
     SELECT r.runner_id,
@@ -417,7 +417,7 @@ B. Runner and Customer Experience
 
 ---
 **Query #3**
-
+Is there any relationship between the number of pizzas and how long the order takes to prepare?
 ```sql
     With num_of_pizzas AS (
     SELECT order_id,
@@ -452,7 +452,7 @@ B. Runner and Customer Experience
 
 ---
 **Query #4**
-
+What was the average distance travelled for each customer?
 ```sql
     SELECT c.customer_id,
            ROUND(AVG(r.distance),2) AS avg_distance
@@ -472,7 +472,7 @@ B. Runner and Customer Experience
 
 ---
 **Query #5**
-
+What was the difference between the longest and shortest delivery times for all orders?
 ```sql
     SELECT MIN(duration) AS shortest_delivery,
     	     MAX(duration) AS longest_delivery,
@@ -485,7 +485,7 @@ B. Runner and Customer Experience
 
 ---
 **Query #6**
-
+What was the average speed for each runner for each delivery and do you notice any trend for these values?
 ```sql
     SELECT c.customer_id,
     	     r.order_id,
@@ -513,7 +513,7 @@ B. Runner and Customer Experience
 
 ---
 **Query #7**
-
+What is the successful delivery percentage for each runner?
 ```sql
     SELECT runner_id,
     	   COUNT(order_id) AS total_orders,
