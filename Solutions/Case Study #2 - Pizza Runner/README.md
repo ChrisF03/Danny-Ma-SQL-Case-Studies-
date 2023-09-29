@@ -380,7 +380,7 @@ How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01)
     FROM pizza_runner.runners
     )
     SELECT starting_week,
-    	     COUNT(runner_id) AS Total_Runners
+           COUNT(runner_id) AS Total_Runners
     FROM signups
     GROUP BY starting_week
     ORDER BY starting_week;
@@ -397,14 +397,14 @@ What was the average time in minutes it took for each runner to arrive at the Pi
 ```sql
     With arrival AS (
     SELECT r.runner_id,
-    	   r.pickup_time,
+    	     r.pickup_time,
            (r.pickup_time - c.order_time) AS arrival_time
     FROM new_runner_orders AS r 
     JOIN new_customer_orders AS c ON
     r.order_id = c.order_id
     )
     SELECT runner_id,
-    	   EXTRACT('minutes' FROM AVG(arrival_time)) AS avg_arrival_time
+    	     EXTRACT('minutes' FROM AVG(arrival_time)) AS avg_arrival_time
     FROM arrival
     GROUP BY runner_id
     ORDER BY runner_id;
