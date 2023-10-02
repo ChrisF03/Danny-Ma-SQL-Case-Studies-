@@ -31,23 +31,21 @@
 **Query #2**
 ```sql
     CREATE TEMP TABLE new_customer_orders AS (
-    	SELECT
-    		order_id,
-    		customer_id,
-    		pizza_id,
-    	CASE
-    		WHEN exclusions = ''
-    			OR exclusions LIKE 'null' THEN Null
-    		ELSE exclusions
+    SELECT order_id,
+    	   customer_id,
+    	   pizza_id,
+    CASE 
+      	WHEN exclusions = ''
+    	OR exclusions LIKE 'null' THEN NULL
+    	ELSE exclusions
     	END AS exclusions,
-    	CASE
-    		WHEN extras = ''
-    			OR extras LIKE 'null' THEN Null
-    		ELSE extras
+    CASE
+    	WHEN extras = ''
+    	OR extras LIKE 'null' THEN NULL
+    	ELSE extras
     	END AS extras,
-    		order_time
-    FROM
-    	pizza_runner.customer_orders
+    	    order_time
+    FROM pizza_runner.customer_orders
     );
 ```
 ```sql
