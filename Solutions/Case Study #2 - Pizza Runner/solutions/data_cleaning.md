@@ -30,9 +30,6 @@
 ---
 **Query #2**
 ```sql
-    DROP TABLE IF EXISTS new_customer_orders;
-```
-```sql
     CREATE TEMP TABLE new_customer_orders AS (
     	SELECT
     		order_id,
@@ -102,28 +99,31 @@
 ---
 **Query #2**
 ```sql
-    DROP TABLE IF EXISTS new_runner_orders;
-```
-```sql
-    CREATE TEMP TABLE new_runner_orders AS (
-    SELECT
-    		order_id,
-    		runner_id,
-    		CASE
-    			WHEN pickup_time LIKE 'null' THEN NULL
-    		ELSE pickup_time
-    	END::timestamp AS pickup_time,
-        NULLIF(regexp_replace(distance, '[^0-9.]', '', 'g'), '')::NUMERIC AS distance,
-        NULLIF(regexp_replace(duration, '[^0-9.]', '', 'g'), '')::NUMERIC AS duration,
-    		CASE
-    			WHEN cancellation LIKE 'null'
-    				OR cancellation LIKE 'NaN' 
-    				OR cancellation LIKE '' THEN NULL
-    		ELSE cancellation
+    CREATE TEMP TABLE new_runner_orders AS
+    SELECT order_id, 
+      	   runner_id,  
+    CASE
+    	WHEN pickup_time LIKE 'null' THEN NULL
+    	ELSE pickup_time
+    	END::TIMESTAMP AS pickup_time,
+    CASE
+    	WHEN distance LIKE 'null' THEN NULL
+    	WHEN distance LIKE '%km' THEN TRIM('km' from distance)
+    	ELSE distance 
+        END::NUMERIC AS distance,
+    CASE
+    	WHEN duration LIKE '%minutes' THEN TRIM('minutes' from duration)
+    	WHEN duration LIKE '%mins' THEN TRIM('mins' from duration)
+    	WHEN duration LIKE '%minute' THEN TRIM('minute' from duration)
+    	WHEN duration LIKE 'null' THEN NULL
+    	ELSE duration 
+    	END::NUMERIC AS duration,
+    CASE
+    	WHEN cancellation LIKE '' 
+    	OR cancellation LIKE 'null' THEN NULL
+    	ELSE cancellation
     	END AS cancellation
-    FROM
-    	pizza_runner.runner_orders
-    );
+    FROM pizza_runner.runner_orders;
 ```
 ```sql
     SELECT * FROM new_runner_orders;
