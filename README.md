@@ -7,8 +7,8 @@ The case studies will be completed in <ins>PostgreSQL v13</ins> and my solutions
 <br>
 <br>
 # Table Of Contents
-* [Case Study #1 : Danny's Diner](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/tree/main/Solutions/Case%20Study%20%231%20-%20Danny%E2%80%99s%20Diner) (12 queries)
-* Case Study #2 : Pizza Runner
+* [Case Study #1 : Danny's Diner](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/tree/main/Solutions/Case%20Study%20%231%20-%20Danny%E2%80%99s%20Diner) (12/12 queries completed)
+* Case Study #2 : Pizza Runner (26/29 queries completed)
 * Case Study #3 : Foodie-Fi
 * Case Study #4 : Data Bank
 * Case Study #5 : Data Mart
