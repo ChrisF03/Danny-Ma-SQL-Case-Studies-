@@ -17,7 +17,7 @@ This case study has LOTS of questions - they are broken up by area of focus incl
 - [Pizza Metrics](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%232%20-%20Pizza%20Runner/solutions/(A)Pizza_Metrics.md)
 - [Runner and Customer Experience](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%232%20-%20Pizza%20Runner/solutions/(B)Runner_and_Customer_Experience.md)
 - [Ingredient Optimisation](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%232%20-%20Pizza%20Runner/solutions/(C)Ingredient_Optimisation.md)
-- [Pricing and Ratings]()
+- [Pricing and Ratings](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%232%20-%20Pizza%20Runner/solutions/(D)Pricing_and_Ratings.md)
 - [Bonus DML Challenges (DML = Data Manipulation Language)]()
 
 The Pizza Runner case study focuses on the following SQL skills:
