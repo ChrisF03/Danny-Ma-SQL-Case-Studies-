@@ -6,3 +6,6 @@ Subscription based businesses are super popular and Danny realised that there wa
 Danny finds a few smart friends to launch his new startup Foodie-Fi in 2020 and started selling monthly and annual subscriptions, giving their customers unlimited on-demand access to exclusive food videos from around the world!
 
 Danny created Foodie-Fi with a data driven mindset and wanted to ensure all future investment decisions and new features were decided using data. This case study focuses on using subscription style digital data to answer important business questions.
+
+## Entity Relationship Diagram
+![foodie-fi(entity_relationship)](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/assets/103148784/37d1260c-4b8c-4205-a8fb-748c5986d184)
