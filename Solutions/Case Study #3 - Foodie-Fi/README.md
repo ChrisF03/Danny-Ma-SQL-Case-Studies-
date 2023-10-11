@@ -15,5 +15,5 @@ Danny created Foodie-Fi with a data driven mindset and wanted to ensure all futu
 ## Case Study 
 A. [Customer Journey](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%233%20-%20Foodie-Fi/solutions/(A)Customer_Journey.md) <br>
 B. [Data Analysis Questions](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%233%20-%20Foodie-Fi/solutions/(B)Data_Analysis_Questions.md) <br>
-C. Challenge Payment Question <br>
+C. Challenge Payment Question (INCOMPLETE) <br>
 D. Outside The Box Questions
