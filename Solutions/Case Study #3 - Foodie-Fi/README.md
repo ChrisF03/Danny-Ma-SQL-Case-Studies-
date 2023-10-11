@@ -11,3 +11,9 @@ Danny created Foodie-Fi with a data driven mindset and wanted to ensure all futu
 
 ## Entity Relationship Diagram
 ![foodie-fi(entity_relationship)](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/assets/103148784/37d1260c-4b8c-4205-a8fb-748c5986d184)
+
+## Case Study 
+A. [Customer Journey]() <br>
+B. [Data Analysis Questions]() <br>
+C. [Challenge Payment Question]() <br>
+D. [Outside The Box Questions]()
