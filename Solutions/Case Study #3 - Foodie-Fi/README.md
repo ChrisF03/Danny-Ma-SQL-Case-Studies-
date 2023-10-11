@@ -13,7 +13,7 @@ Danny created Foodie-Fi with a data driven mindset and wanted to ensure all futu
 ![foodie-fi(entity_relationship)](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/assets/103148784/37d1260c-4b8c-4205-a8fb-748c5986d184)
 
 ## Case Study 
-A. [Customer Journey]() <br>
-B. [Data Analysis Questions]() <br>
-C. [Challenge Payment Question]() <br>
-D. [Outside The Box Questions]()
+A. [Customer Journey](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%233%20-%20Foodie-Fi/solutions/(A)Customer_Journey.md) <br>
+B. [Data Analysis Questions](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%233%20-%20Foodie-Fi/solutions/(B)Data_Analysis_Questions.md) <br>
+C. Challenge Payment Question <br>
+D. Outside The Box Questions
