@@ -17,8 +17,8 @@ This case study is all about calculating metrics, growth and helping the busines
 ![Data Bank(entity-relationship)](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/assets/103148784/cd011a50-4e00-45d7-b468-7bb3c0300a47)
 
 ## Case Study
-A. Customer Nodes Exploration
-B. Customer Transactions
-C. Data Allocation Challenge
-D. Extra Challenge
-Extension Request
+A. Customer Nodes Exploration <br>
+B. Customer Transactions <br>
+C. Data Allocation Challenge <br>
+D. Extra Challenge <br>
+Extension Request <br>
