@@ -80,24 +80,24 @@ Generate an order item for each record in the customers_orders table in the form
 	- Meat Lovers - Extra Bacon <br>
 	- Meat Lovers - Exclude Cheese, Bacon - Extra Mushroom, Peppers
 ```sql
-    SELECT t1.order_id,
-    	   t1.customer_id,
-           t1.pizza_id,
-           t1.order_time,
-           CASE WHEN t1.exclusions IS NOT NULL AND t1.extras IS NULL
-                  THEN CONCAT(t2.pizza_name, ' - ', 'Exclude: ', t1.exclusions)
-                WHEN t1.exclusions IS NULL AND t1.extras IS NOT NULL
-                  THEN CONCAT(t2.pizza_name, ' - ', 'Extra: ', t1.extras)
-                WHEN t1.exclusions IS NOT NULL AND t1.extras IS NOT NULL
-                  THEN CONCAT(t2.pizza_name, ' - ', 'Exclude: ', t1.exclusions, ' - ', 'Extra: ', t1.extras)
-      	       ELSE t2.pizza_name
-      	       END AS order_item
-    FROM new_customer_orders AS t1
-    JOIN pizza_runner.pizza_names AS t2 ON
-    t1.pizza_id = t2.pizza_id
-    ORDER BY t1.order_id ASC;
+    --SELECT t1.order_id,
+    	   --t1.customer_id,
+           --t1.pizza_id,
+           --t1.order_time,
+           --CASE WHEN t1.exclusions IS NOT NULL AND t1.extras IS NULL
+                  --THEN CONCAT(t2.pizza_name, ' - ', 'Exclude: ', t1.exclusions)
+                --WHEN t1.exclusions IS NULL AND t1.extras IS NOT NULL
+                  --THEN CONCAT(t2.pizza_name, ' - ', 'Extra: ', t1.extras)
+                --WHEN t1.exclusions IS NOT NULL AND t1.extras IS NOT NULL
+                  --THEN CONCAT(t2.pizza_name, ' - ', 'Exclude: ', t1.exclusions, ' - ', 'Extra: ', t1.extras)
+      	       --ELSE t2.pizza_name
+      	       --END AS order_item
+    --FROM new_customer_orders AS t1
+    --JOIN pizza_runner.pizza_names AS t2 ON
+    --t1.pizza_id = t2.pizza_id
+    --ORDER BY t1.order_id ASC;
 ```
-| order_id | customer_id | pizza_id | order_time               | order_item                               |
+<!-- | order_id | customer_id | pizza_id | order_time               | order_item                               |
 | -------- | ----------- | -------- | ------------------------ | ---------------------------------------- |
 | 1        | 101         | 1        | 2020-01-01T18:05:02.000Z | Meatlovers                               |
 | 2        | 101         | 1        | 2020-01-01T19:00:52.000Z | Meatlovers                               |
@@ -112,7 +112,7 @@ Generate an order item for each record in the customers_orders table in the form
 | 8        | 102         | 1        | 2020-01-09T23:54:33.000Z | Meatlovers                               |
 | 9        | 103         | 1        | 2020-01-10T11:22:59.000Z | Meatlovers - Exclude: 4 - Extra: 1, 5    |
 | 10       | 104         | 1        | 2020-01-11T18:34:49.000Z | Meatlovers                               |
-| 10       | 104         | 1        | 2020-01-11T18:34:49.000Z | Meatlovers - Exclude: 2, 6 - Extra: 1, 4 |
+| 10       | 104         | 1        | 2020-01-11T18:34:49.000Z | Meatlovers - Exclude: 2, 6 - Extra: 1, 4 | -->
 
 ---
 **Query #5**  <br>
