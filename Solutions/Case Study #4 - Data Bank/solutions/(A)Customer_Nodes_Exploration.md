@@ -15,7 +15,7 @@ How many unique nodes are there on the Data Bank system?
 What is the number of nodes per region?
 ```sql
     SELECT t1.region_name,
-    	   COUNT(DISTINCT t2.node_id) as total_nodes
+    	   COUNT(t2.node_id) as total_nodes
     FROM data_bank.regions as t1
     JOIN data_bank.customer_nodes as t2 ON
     t1.region_id = t2.region_id
@@ -23,11 +23,11 @@ What is the number of nodes per region?
 ```
 | region_name | total_nodes |
 | ----------- | ----------- |
-| Africa      | 5           |
-| America     | 5           |
-| Asia        | 5           |
-| Australia   | 5           |
-| Europe      | 5           |
+| Africa      | 714         |
+| America     | 735         |
+| Asia        | 665         |
+| Australia   | 770         |
+| Europe      | 616         |
 
 ---
 **Query #3** <br>
