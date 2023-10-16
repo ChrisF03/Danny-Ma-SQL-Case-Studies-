@@ -77,9 +77,9 @@ GROUP BY customer_id, txn_month
 ORDER BY customer_id
 )
 SELECT *,
-       SUM(balance) OVER (PARTITION BY customer_id ORDER BY txn_month 
-                          ASC ROWS BETWEEN UNBOUNDED PRECEDING AND 
-                          CURRENT ROW) as Closing_balance
+       SUM(balance) OVER (PARTITION BY customer_id
+                          ORDER BY txn_month 
+                          ) as Closing_balance
 FROM bal
 GROUP BY customer_id, txn_month, balance
 ORDER BY customer_id;
