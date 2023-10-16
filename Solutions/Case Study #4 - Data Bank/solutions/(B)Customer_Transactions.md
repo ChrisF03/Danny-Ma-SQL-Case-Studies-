@@ -84,7 +84,7 @@ FROM bal
 GROUP BY customer_id, txn_month, balance
 ORDER BY customer_id;
 ```
-**only results for customer_id #1-3 are shown 
+* **only results for customer_id #1-3 are shown**
 
 | customer_id | txn_month                | balance | closing_balance |
 | ----------- | ------------------------ | ------- | --------------- |
