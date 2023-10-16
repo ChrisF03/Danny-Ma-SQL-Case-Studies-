@@ -15,3 +15,6 @@ The key business question he wants you to help him answer are the following:
 * What can we do about future introduction of similar sustainability updates to the business to minimise impact on sales?
 
 ## Entity Relationship Diagram
+For this case study there is only a single table: **data_mart.weekly_sales**
+
+![Data Mart Entity Relationship](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/assets/103148784/05c91ca3-4cb9-44a0-8030-b504b1cbfc24)
