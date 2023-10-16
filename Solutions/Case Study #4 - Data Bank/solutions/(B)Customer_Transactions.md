@@ -102,5 +102,6 @@ ORDER BY customer_id;
 ---
 **Query #5** <br>
 What is the percentage of customers who increase their closing balance by more than 5%?
-```sql
+```diff
+- INCOMPLETE
 ```
