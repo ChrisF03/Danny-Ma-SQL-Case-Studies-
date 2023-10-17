@@ -30,7 +30,7 @@ In a single query, perform the following operations and generate a new table in 
 * Generate a new avg_transaction column as the sales value divided by transactions rounded to 2 decimal places for each record
 
 ```sql
-WITH clean_weekly_sales AS (
+CREATE TEMP TABLE clean_weekly_sales AS (
 SELECT TO_DATE(week_date, 'dd/mm/yy') AS week_date, 
        DATE_PART('week', TO_DATE(week_date, 'dd/mm/yy'))::INT AS week_number,
        DATE_PART('month', TO_DATE(week_date, 'dd/mm/yy'))::INT AS month_number,
@@ -43,9 +43,9 @@ SELECT TO_DATE(week_date, 'dd/mm/yy') AS week_date,
        END AS segment,
        CASE 
        	WHEN SUBSTRING(segment, 2, 1) = '1' THEN 'Young Adults'
-  			WHEN SUBSTRING(segment, 2, 1) = '2' THEN 'Middle Aged'
-  			WHEN SUBSTRING(segment, 2, 1) = '3' OR SUBSTRING(segment, 2, 1) = '4'  THEN 'Retirees'
-			ELSE 'unknown'
+	WHEN SUBSTRING(segment, 2, 1) = '2' THEN 'Middle Aged'
+	WHEN SUBSTRING(segment, 2, 1) = '3' OR SUBSTRING(segment, 2, 1) = '4'  THEN 'Retirees'
+	ELSE 'unknown'
        END AS age_band,
        CASE 
 	WHEN SUBSTRING(segment, 1, 1) = 'C' THEN 'Couples'
