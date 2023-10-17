@@ -20,3 +20,4 @@ For this case study there is only a single table: **data_mart.weekly_sales**
 ![Data Mart Entity Relationship](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/assets/103148784/05c91ca3-4cb9-44a0-8030-b504b1cbfc24)
 
 ## Case Study
+1. [Data Cleansing Steps](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%235%20-%20Data%20Mart/solutions/(1)Data_Cleaning_Steps.md)
