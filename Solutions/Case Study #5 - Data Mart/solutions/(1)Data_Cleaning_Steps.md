@@ -57,7 +57,7 @@ SELECT TO_DATE(week_date, 'dd/mm/yy') AS week_date,
        sales,
        ROUND((sales/transactions), 2) AS avg_transaction
 FROM data_mart.weekly_sales
-)
+);
 ```
 ```sql
 SELECT * 
