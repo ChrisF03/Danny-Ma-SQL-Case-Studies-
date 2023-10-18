@@ -14,6 +14,10 @@ The key business question he wants you to help him answer are the following:
 * Which platform, region, segment and customer types were the most impacted by this change? <br>
 * What can we do about future introduction of similar sustainability updates to the business to minimise impact on sales?
 
+This case study actually is based off a real life change in Australian retailers where plastic bags were no longer provided for free - as you can expect, some customers would have changed their shopping behaviour because of this change!
+
+Analysis which is related to certain key events which can have a significant impact on sales or engagement metrics is always a part of the data analytics menu. Learning how to approach these types of problems was a super valuable lesson.
+
 ## Entity Relationship Diagram
 For this case study there is only a single table: **data_mart.weekly_sales**
 
