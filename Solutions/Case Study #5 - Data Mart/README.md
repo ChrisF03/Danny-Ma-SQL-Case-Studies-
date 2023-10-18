@@ -21,3 +21,4 @@ For this case study there is only a single table: **data_mart.weekly_sales**
 
 ## Case Study
 1. [Data Cleansing Steps](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%235%20-%20Data%20Mart/solutions/(1)Data_Cleaning_Steps.md)
+2. [Data Exploration](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%235%20-%20Data%20Mart/solutions/(2)Data_Exploration.md)
