@@ -9,8 +9,6 @@ Danny Ma's 8-week SQL Challenge provides us multiple realistic end to end case s
 * Fast moving consumer goods
 * Digital marketing
 
-This the **5th** Case Study 
-
 ## Introduction
 
 Data Mart is Danny’s latest venture and after running international operations for his online supermarket that specialises in fresh produce - Danny is asking for your support to analyse his sales performance.
