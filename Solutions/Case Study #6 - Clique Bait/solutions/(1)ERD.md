@@ -37,3 +37,5 @@ CREATE TABLE clique_bait.events (
   "event_time" TIMESTAMP
 );
 ```
+### Result:
+![Clique Bait](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/assets/103148784/e6426e14-0e28-445a-901a-7694cf9e711d)
