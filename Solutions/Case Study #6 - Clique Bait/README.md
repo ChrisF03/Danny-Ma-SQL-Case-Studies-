@@ -15,6 +15,20 @@ Clique Bait is not like your regular online seafood store - the founder and CEO 
 
 In this case study - you are required to support Danny’s vision and analyse his dataset and come up with creative solutions to calculate funnel fallout rates for the Clique Bait online store.
 
+This case study is based off Danny's many years working with digital datasets in consumer banking and retail supermarkets - all of the datasets are based off real datasets Danny has come across in challenging problem solving scenarios and the questions reflect similar problems which he worked on.
+
+Campaign analysis is almost everywhere in the data world, especially in marketing, digital, UX and retail industries - and being able to analyse views, clicks and other digital behaviour is a critical skill to have in your toolbelt as a data professional!
+
+## Data
+For this case study there is a total of 5 datasets:
+* users
+* events
+* event_indentifiers
+* campaign_identifier
+* page_hierarchy
+
+An enterprise relationship diagram was not provided but we are tasked with designing one in [dbdiagram.io](https://dbdiagram.io/home) as the first step in the case study. 
+
 ## Case Study 
 1. [Enterprise Relationship Diagram](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%236%20-%20Clique%20Bait/solutions/(1)ERD.md)
 2. [Digital Analysis](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%236%20-%20Clique%20Bait/solutions/(2)Digital_Analysis.md)
