@@ -144,7 +144,7 @@ What is the average conversion rate from view to cart add?
 | 60.95              |
 
 ---
-`What is the average conversion rate from cart add to purchase?`
+What is the average conversion rate from cart add to purchase?
 ```sql
     SELECT ROUND(100 * AVG(purchased/carted), 2) as cart_to_purchase_ratio
     FROM product_info;
