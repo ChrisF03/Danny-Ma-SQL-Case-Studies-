@@ -16,7 +16,7 @@ Clique Bait is not like your regular online seafood store - the founder and CEO 
 In this case study - you are required to support Danny’s vision and analyse his dataset and come up with creative solutions to calculate funnel fallout rates for the Clique Bait online store.
 
 ## Case Study 
-1. Enterprise Relationship Diagram
+1. [Enterprise Relationship Diagram](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%236%20-%20Clique%20Bait/solutions/(1)ERD.md)
 2. Digital Analysis
 3. Product Funnel Analysis
 4. Campaigns Analysis
