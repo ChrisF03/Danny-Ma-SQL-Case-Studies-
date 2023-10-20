@@ -15,8 +15,8 @@ Generate a table that has 1 single row for every unique visit_id record and has 
 
 ```sql
 CREATE TEMP TABLE campaign_analysis AS (
-SELECT t1.user_id, 
-	   t2.visit_id, 
+SELECT t1.user_id,
+       t2.visit_id, 
        MIN(t2.event_time) as visit_start_time,
        SUM(CASE WHEN t2.event_type = 1 THEN 1 ELSE 0 END) as page_views,
        SUM(CASE WHEN t2.event_type = 2 THEN 1 ELSE 0 END) as cart_adds,
