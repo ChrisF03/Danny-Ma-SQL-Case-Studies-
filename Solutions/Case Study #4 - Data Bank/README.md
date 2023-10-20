@@ -9,8 +9,6 @@ Danny Ma's 8-week SQL Challenge provides us multiple realistic end to end case s
 * Fast moving consumer goods
 * Digital marketing
 
-This the **4th** Case Study 
-
 ## Introduction
 There is a new innovation in the financial industry called Neo-Banks: new aged digital only banks without physical branches.
 
