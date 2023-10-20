@@ -9,8 +9,6 @@ Danny Ma's 8-week SQL Challenge provides us multiple realistic end to end case s
 * Fast moving consumer goods
 * Digital marketing
 
-This the **2nd** Case Study 
-
 ## Introduction
 Did you know that over 115 million kilograms of pizza is consumed daily worldwide??? (Well according to Wikipedia anyway…)
 
