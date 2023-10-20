@@ -33,4 +33,4 @@ An enterprise relationship diagram was not provided but we are tasked with desig
 1. [Enterprise Relationship Diagram](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%236%20-%20Clique%20Bait/solutions/(1)ERD.md)
 2. [Digital Analysis](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%236%20-%20Clique%20Bait/solutions/(2)Digital_Analysis.md)
 3. [Product Funnel Analysis](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%236%20-%20Clique%20Bait/solutions/(3)Product_Funnel_Analysis.md)
-4. Campaigns Analysis
+4. [Campaigns Analysis](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%236%20-%20Clique%20Bait/solutions/(4)Campaigns_Analysis.md)
