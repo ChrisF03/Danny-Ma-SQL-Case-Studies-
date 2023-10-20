@@ -9,8 +9,6 @@ Danny Ma's 8-week SQL Challenge provides us multiple realistic end to end case s
 * Fast moving consumer goods
 * Digital marketing
 
-This the **3rd** Case Study 
-
 ## Introduction
 Subscription based businesses are super popular and Danny realised that there was a large gap in the market - he wanted to create a new streaming service that only had food related content - something like Netflix but with only cooking shows!
 
