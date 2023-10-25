@@ -17,11 +17,15 @@ Danny, the CEO of this trendy fashion company has asked you to assist the teamâ€
 
 Sales, transactions and product exposure is always going to be a main objective for many data analysts and data scientists when working within a company that sells some type of product - **Spoiler alert**: nearly all companies will sell products!
 
-## Case Study
-
-
 Being able to navigate your way around a product hierarchy and understand the different levels of the structures as well as being able to join these details to sales related datasets will be super valuable for anyone wanting to work within a financial, customer or exploratory analytics capacity.
 
-## Entity Relationship Diagram 
+## Data
 
 For this case study there is a total of 4 datasets for this case study - however you will only need to utilise 2 main tables to solve all of the regular questions, and the additional 2 tables are used only for the bonus challenge question!
+
+* balanced_tree.product_details
+* balanced_tree.sales
+* balanced_tree.product_details
+* balanced_tree.product_hierarchy
+
+## Case Study
