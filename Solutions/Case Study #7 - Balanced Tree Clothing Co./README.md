@@ -21,7 +21,7 @@ Being able to navigate your way around a product hierarchy and understand the di
 
 ## Data
 
-For this case study there is a total of 4 datasets for this case study - however you will only need to utilise 2 main tables to solve all of the regular questions, and the additional 2 tables are used only for the bonus challenge question!
+For this case study there is a total of 4 datasets for this case study - however we will only need to utilise the 2 first tables to solve all of the regular questions, and the additional 2 tables are used only for the bonus challenge question!
 
 * balanced_tree.product_details
 * balanced_tree.sales
