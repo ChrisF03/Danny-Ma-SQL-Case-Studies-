@@ -32,4 +32,4 @@ For this case study there is a total of 4 datasets for this case study - however
 A. [High Level Sales Analysis](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co./solutions/(A)High_Level_Sales_Analysis.md) <br>
 B. [Transaction Analysis](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co./solutions/(B)Transaction_Analysis.md) <br>
 C. [Product Analysis](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co./solutions/(C)Product_Analysis.md) <br>
-D. Reporting Challenge 
+D. [Reporting Challenge](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co./solutions/(D)Reporting_Challenge.md) 
