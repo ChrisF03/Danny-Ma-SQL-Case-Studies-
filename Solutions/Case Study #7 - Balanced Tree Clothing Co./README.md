@@ -25,7 +25,7 @@ For this case study there is a total of 4 datasets for this case study - however
 
 * balanced_tree.product_details
 * balanced_tree.sales
-* balanced_tree.product_details
 * balanced_tree.product_hierarchy
+* balanced_tree.product_prices
 
 ## Case Study
