@@ -30,3 +30,6 @@ For this case study there is a total of 4 datasets for this case study - however
 
 ## Case Study
 A. [High Level Sales Analysis](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co./solutions/(A)High_Level_Sales_Analysis.md)
+B. Transaction Analysis
+C. Product Analysis
+D. Reporting Challenge
