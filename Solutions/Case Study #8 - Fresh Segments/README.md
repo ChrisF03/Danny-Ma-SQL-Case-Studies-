@@ -25,7 +25,7 @@ Hopefully this case study helps you think about how these index metrics and comp
 ![Fresh Segments (ERD)](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/assets/103148784/53b15852-2fb8-4ef6-b19a-70a94322511c)
 
 ## Case Study
-1. Data Exploration and Cleansing
-2. Interest Analysis
-3. Segment Analysis
-4. Index Analysis
+A. Data Exploration and Cleansing
+B. Interest Analysis
+C. Segment Analysis
+D. Index Analysis
