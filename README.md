@@ -3,7 +3,7 @@
 # Danny Ma's 8-week SQL Challenge 
 These SQL case studies are free case studies designed by [Danny Ma](https://www.linkedin.com/in/datawithdanny/) to help data analysts practice and hone their SQL skills by simulating real-world business problems and challenging participants to query for solutions. 
 
-The case studies will be completed in <ins>PostgreSQL v13</ins> and my solutions to each case study will be found below as I complete them.
+The case studies were completed in <ins>PostgreSQL v13</ins> and my solutions to each case study can be found below.
 <br>
 <br>
 # Table Of Contents
