@@ -18,3 +18,6 @@ Clients share their customer lists with the Fresh Segments team who then aggrega
 In particular - the composition and rankings for different interests are provided for each client showing the proportion of their customer list who interacted with online assets related to each interest for each month.
 
 Danny has asked for your assistance to analyse aggregated metrics for an example client and provide some high level insights about the customer list and their interests.
+
+## Entity Relationship Diagram
+![Fresh Segments (ERD)](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/assets/103148784/53b15852-2fb8-4ef6-b19a-70a94322511c)
