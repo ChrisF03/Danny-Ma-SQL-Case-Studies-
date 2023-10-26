@@ -21,3 +21,6 @@ Danny has asked for your assistance to analyse aggregated metrics for an example
 
 ## Entity Relationship Diagram
 ![Fresh Segments (ERD)](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/assets/103148784/53b15852-2fb8-4ef6-b19a-70a94322511c)
+
+## Case Study
+
