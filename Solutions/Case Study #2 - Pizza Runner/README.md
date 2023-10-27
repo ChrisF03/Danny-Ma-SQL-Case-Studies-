@@ -18,6 +18,9 @@ Danny was sold on the idea, but he knew that pizza alone was not going to help h
 
 Danny started by recruiting “runners” to deliver fresh pizza from Pizza Runner Headquarters (otherwise known as Danny’s house) and also maxed out his credit card to pay freelance developers to build a mobile app to accept orders from customers.
 
+## Entity Relationship Diagram
+![Pizza Runner(entity relationship)](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/assets/103148784/8df3ccec-7e96-4e61-92cf-28882d1ef0e6)
+
 ## Case Study
 - [Data Cleaning](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/blob/main/Solutions/Case%20Study%20%232%20-%20Pizza%20Runner/solutions/data_cleaning.md)
 
@@ -37,6 +40,3 @@ The Pizza Runner case study focuses on the following SQL skills:
 - String transformations
 - Dealing with null values
 - Regular expressions
-
-## Entity Relationship Diagram
-![Pizza Runner(entity relationship)](https://github.com/ChrisF03/Danny-Ma-SQL-Case-Studies-/assets/103148784/8df3ccec-7e96-4e61-92cf-28882d1ef0e6)
